@@ -1,7 +1,7 @@
 provider "google" {
-  credentials = file("credentials.json") 
-  project     = "cloudengrprojs"            
-  region      = "us-central1"                   
+  credentials = file("credentials.json")
+  project     = "cloudengrprojs"
+  region      = "us-central1"
 }
 
 resource "google_storage_bucket" "my-bucket" {
