@@ -1,14 +1,12 @@
 provider "google" {
-  credentials = var.google_credentials
-  project     = "cloudengrprojs"
-  region      = "us-central1"
+  project     = "your-project-id"
+  region      = "your-region"
+  credentials = var.GCP_KEY
 }
 
-variable "google_credentials" {
-  type    = string
+variable "GCP_KEY" {
   default = ""
 }
-
 resource "google_storage_bucket" "my-bucket" {
   name          = "demobucket_withterra"
   location      = "US"
