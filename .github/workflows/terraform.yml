@@ -32,6 +32,9 @@ jobs:
     - name: Set up Google Cloud Credentials
       run: echo "${{ secrets.GCP_KEY }}" > ./credentials.json
 
+    - name: Debug Credentials File
+      run: cat ./credentials.json
+
     # Initialize a new or existing Terraform working directory by creating initial files, loading any remote state, downloading modules, etc.
     - name: Terraform Init
       run: terraform init
