@@ -5,8 +5,8 @@ provider "google" {
 }
 
 
-resource "google_storage_bucket" "my_bucket" {
-  name          = "unique-bucket-name-12345"
+resource "google_storage_bucket" "terra_create_bucket" {
+  name          = "ezi_buvkeet"
   location      = "US"
   storage_class = "STANDARD"
 
