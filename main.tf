@@ -5,10 +5,10 @@ provider "google" {
 }
 
 
-resource "google_storage_bucket" "my-bucket" {
-  name          = "demobucket_withterra"
+resource "google_storage_bucket" "my_bucket" {
+  name          = "unique-bucket-name-12345"
   location      = "US"
-  force_destroy = true
+  storage_class = "STANDARD"
 
   public_access_prevention = "enforced"
 }
